@@ -4,12 +4,21 @@
       {
         "src": "server.js",
         "use": "@vercel/node",
+        "config": { "includeFiles": ["dist/**"] }
       }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "server.js"
-      }
-    ]
-  }
+        {
+          "src": "/about",
+          "dest": "/views/about.html"
+        },
+        {
+          "src": "/",
+          "dest": "/views/home.html"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "server.js"
+        }
+      ]
+    }
