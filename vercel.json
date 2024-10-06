@@ -10,11 +10,11 @@
     "routes": [
         {
           "src": "/about",
-          "dest": "/views/about.html"
+          "dest": "/public/views/about.html"
         },
         {
           "src": "/",
-          "dest": "/views/home.html"
+          "dest": "/public/views/about.html"
         },
         {
           "src": "/(.*)",
